@@ -24,7 +24,7 @@ public:
 	void addBack(int);		// puts on item at the end of the structure and
 							// creates a new node if the queue is full
 	int getFront();			// returns the value at the front of the structure
-	void removeFront();		// removes the first item in the structure
+	int removeFront();		// removes the first item in the structure
 	void displayQueue();	// outputs the queue to the console
 };
 #endif

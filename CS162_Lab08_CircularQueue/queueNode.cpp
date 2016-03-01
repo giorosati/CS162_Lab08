@@ -22,37 +22,37 @@ queueNode::queueNode()		//constructor
 	value = -1;
 }
 
-queueNode::~queueNode()	//destructor
+queueNode::~queueNode()		//destructor
 {
 
 }
 
-void queueNode::setPrev(queueNode*)	//sets prev pointer
+void queueNode::setPrev(queueNode* nodeIn)	//sets prev pointer
 {
-
+	prev = nodeIn;
 }
 
-void queueNode::setNext(queueNode*)	//sets next pointer
+void queueNode::setNext(queueNode* nodeIn)	//sets next pointer
 {
-
+	next = nodeIn;
 }
 
-queueNode* queueNode::getPrev()	//gets prev pointer
+queueNode* queueNode::getPrev()		//gets prev pointer
 {
-
+	return  prev;
 }
 
-queueNode* queueNode::getNext()	//gets next pointer
+queueNode* queueNode::getNext()		//gets next pointer
 {
-
+	return next;
 }
 
-void queueNode::setValue(int)			//sets value
+void queueNode::setValue(int intIn)		//sets value
 {
-
+	value = intIn;
 }
 
-int queueNode::getValue()			//gets value
+int queueNode::getValue()				//gets value
 {
-
+	return value;
 }
